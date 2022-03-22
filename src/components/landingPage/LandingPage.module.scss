@@ -1,4 +1,5 @@
 @import "../../styles/variables";
+@import "../../styles/media";
 
 @mixin fadeIn($duration, $delay) {
   animation-name: fade-in;
@@ -35,7 +36,7 @@
   }
 }
 
-@media screen and (min-width: 901px) {
+@include desktop {
   .profileImage {
     img {
       max-height: auto;
@@ -44,7 +45,7 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@include mobile {
   .body {
     display: grid;
     grid-template-columns: repeat(1, 1fr);

@@ -7,9 +7,12 @@ body {
   font-family: $roboto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  a{
+  a {
     text-decoration: none;
     color: white;
+  }
+  ul {
+    list-style: none;
   }
 }
 
@@ -19,7 +22,7 @@ h1 {
   font-weight: 400;
 }
 
-h2{
+h2 {
   font-size: 4vmin;
   font-weight: 200;
   margin: 0;
