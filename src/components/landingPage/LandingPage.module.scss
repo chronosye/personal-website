@@ -1,0 +1,72 @@
+@import "../../styles/variables";
+
+@mixin fadeIn($duration, $delay) {
+  animation-name: fade-in;
+  animation-fill-mode: both;
+  animation-duration: $duration;
+  animation-delay: $delay;
+}
+
+.body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.text {
+  text-align: end;
+  margin: auto 0;
+  h2 {
+    @include fadeIn(2s, 0s);
+  }
+  h1 {
+    @include fadeIn(2s, 0.5s);
+  }
+  p {
+    @include fadeIn(2s, 1s);
+  }
+}
+
+.profileImage {
+  @include fadeIn(3s, 0s);
+  text-align: center;
+  img {
+    text-align: end;
+    filter: brightness(90%);
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .profileImage {
+    img {
+      max-height: auto;
+      width: 70vmin;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .body {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .profileImage {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    img {
+      width: 55vmin;
+      height: auto;
+    }
+  }
+  .text {
+    text-align: center;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
