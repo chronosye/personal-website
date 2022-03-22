@@ -1,0 +1,36 @@
+@import "../../styles/variables";
+
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 60px;
+  nav {
+    height: 100%;
+  }
+  ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  li {
+    margin: 0 1rem;
+    width: 5rem;
+    font-weight: 100;
+  }
+  a {
+    color: $navbarItems;
+    text-decoration: none;
+    &:hover,
+    &:active,
+    &.active {
+      color: $navbarItemsHover;
+      padding-top: 0.25rem;
+      border-top: 1px solid $navbarItemsHover;
+    }
+  }
+}
