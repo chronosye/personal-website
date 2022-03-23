@@ -1,0 +1,30 @@
+@import "../../styles/variables";
+@import "../../styles/media";
+
+.text {
+  p {
+    font-size: 3vmin;
+    margin: 20px;
+    text-align: start;
+  }
+}
+
+@include mobile {
+  .image {
+    padding-left: 10%;
+  }
+  .text {
+    p {
+      text-align: center;
+    }
+  }
+}
+
+@include desktop {
+  .image {
+    img {
+      max-height: auto;
+      width: 10vmin;
+    }
+  }
+}
