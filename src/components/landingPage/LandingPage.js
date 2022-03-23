@@ -1,28 +1,31 @@
 import React from "react";
 import ProfileImage from "../../assets/profile.png";
+import TwoSideGrid from "../layout/TwoSideGrid";
 import classes from "./LandingPage.module.scss";
 
 const landingPage = () => {
-  return (
-    <div className={classes.body}>
-      <div className={classes.text}>
-        <div className="animated fadeIn">
-          <h2>Hello!</h2>
-        </div>
-
-        <h1>I'm Uldis</h1>
-        <p>
-          Student @ <a href="https://www.df.lu.lv/">University of Latvia</a>
-        </p>
-        <p>
-          Goalkeeper @ <a href="https://www.zrhk.lv/">Tenax Dobele</a>
-        </p>
+  const text = (
+    <div className={classes.text}>
+      <div>
+        <h2>Hello!</h2>
       </div>
-      <div className={classes.profileImage}>
-        <img src={ProfileImage} alt="Profile" />
-      </div>
+      <h1>I'm Uldis</h1>
+      <p>
+        CS Student @ <a href="https://www.df.lu.lv/">University of Latvia</a>
+      </p>
+      <p>
+        Goalkeeper @ <a href="https://www.zrhk.lv/">Tenax Dobele</a>
+      </p>
     </div>
   );
+
+  const image = (
+    <div className={classes.image}>
+      <img src={ProfileImage} alt="Profile" />
+    </div>
+  );
+
+  return <TwoSideGrid text={text} image={image} />;
 };
 
 export default landingPage;
