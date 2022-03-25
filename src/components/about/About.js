@@ -1,11 +1,12 @@
 import React from "react";
 import classes from "./About.module.scss";
 import TwoSideGrid from "../layout/TwoSideGrid";
-import AboutImage from "../../assets/aboutMe.gif";
+import AboutImage from "../../assets/aboutMeImage.png";
 
 const About = () => {
   const text = (
     <div className={classes.text}>
+      <h1>About me</h1>
       <p>
         I am a programmer from Latvia. Right now I have my final semester at the
         University of Latvia in computer sciences. I like to create UI's that

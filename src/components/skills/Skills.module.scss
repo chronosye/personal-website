@@ -1,0 +1,26 @@
+@import "../../styles/media";
+
+.body {
+  @include fadeIn(3s, 0s);
+  h1 {
+    font-variant: small-caps;
+    text-align: center;
+  }
+  .items {
+    height: 70vh;
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+}
+
+@include small-mobile {
+  .body {
+    .items {
+      height: auto;
+    }
+  }
+}

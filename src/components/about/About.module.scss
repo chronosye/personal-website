@@ -1,18 +1,23 @@
 @import "../../styles/variables";
 @import "../../styles/media";
 
+.text, .image{
+  @include fadeIn(3s, 0s);
+}
+
 .text {
+  h1{
+    text-align: center;
+    font-variant: small-caps;
+  }
   p {
-    font-size: 3vmin;
+    font-size: 2.5vmin;
     margin: 20px;
     text-align: start;
   }
 }
 
 @include mobile {
-  .image {
-    padding-left: 10%;
-  }
   .text {
     p {
       text-align: center;

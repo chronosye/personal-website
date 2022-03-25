@@ -10,11 +10,26 @@
   }
 }
 
+@mixin small-mobile {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
 @mixin fadeIn($duration, $delay) {
   animation-name: fade-in;
   animation-fill-mode: both;
   animation-duration: $duration;
   animation-delay: $delay;
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 }
 
 @mixin fadeOut($duration, $delay) {
@@ -22,22 +37,13 @@
   animation-fill-mode: both;
   animation-duration: $duration;
   animation-delay: $delay;
-}
 
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
+  @keyframes fade-out {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
   }
 }
