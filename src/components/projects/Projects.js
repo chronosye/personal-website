@@ -5,6 +5,7 @@ import handballSystem from "../../assets/projectImages/handball-system.PNG";
 import roadToUni from "../../assets/projectImages/roadToUni.PNG";
 import covidInfo from "../../assets/projectImages/covidInfo.PNG";
 import vardaDienuApp from "../../assets/projectImages/vardaDienuApp.png";
+import personalWebsite from "../../assets/projectImages/personalWebsite.PNG";
 
 const items = [
   {
@@ -47,6 +48,16 @@ const items = [
     github: "https://github.com/chronosye/VardaDienuApp",
     playstore: "https://play.google.com/store/apps/details?id=com.uldisj.vardadienuapp",
     web: null,
+  },
+  {
+    image: personalWebsite,
+    title: "Personal website",
+    description:
+      "Personal website. Built to show others who I am, and what I have done before. Shows information about me, my skills, and also my portfolio.",
+    technologies: ["React.js", "SASS", "React Router"],
+    github: "https://github.com/chronosye/personal-website",
+    playstore: null,
+    web: "/",
   },
 
 ];
