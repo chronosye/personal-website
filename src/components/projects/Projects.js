@@ -46,7 +46,8 @@ const items = [
       "An app, which sends a request to an API to get info about today's name days. Then sends a notification to the user, to inform them about name days.",
     technologies: ["Android", "Kotlin", "Ads", "AlarmManager"],
     github: "https://github.com/chronosye/VardaDienuApp",
-    playstore: "https://play.google.com/store/apps/details?id=com.uldisj.vardadienuapp",
+    playstore:
+      "https://play.google.com/store/apps/details?id=com.uldisj.vardadienuapp",
     web: null,
   },
   {
@@ -59,10 +60,10 @@ const items = [
     playstore: null,
     web: "/",
   },
-
 ];
 
 const Projects = () => {
+  document.title = "Projects - Uldis Jansons";
   return (
     <div className={classes.items}>
       {items.map((item) => (

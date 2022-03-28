@@ -25,6 +25,8 @@ const landingPage = () => {
     </div>
   );
 
+  document.title = "Home - Uldis Jansons";
+
   return <TwoSideGrid text={text} image={image} />;
 };
 

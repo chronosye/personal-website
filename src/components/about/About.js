@@ -30,6 +30,8 @@ const About = () => {
     </div>
   );
 
+  document.title = "About - Uldis Jansons";
+
   return <TwoSideGrid text={text} image={image} />;
 };
 

@@ -15,6 +15,7 @@ const skills = [
 ];
 
 const Skills = () => {
+  document.title = "Skills - Uldis Jansons";
   return (
     <div className={classes.body}>
       <div className={classes.items}>
