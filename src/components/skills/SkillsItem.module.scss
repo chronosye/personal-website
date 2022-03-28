@@ -1,4 +1,5 @@
 @import "../../styles/media";
+@import "../../styles/variables";
 
 .skillItem {
   font-size: 30px;
@@ -7,4 +8,9 @@
   padding: 10px;
   border-radius: 4px;
   margin: 10px;
+  &:hover{
+    cursor: default;
+    margin-top: 6px;
+    margin-bottom: 14px;
+  }
 }

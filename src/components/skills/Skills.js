@@ -11,6 +11,7 @@ const skills = [
   "Spring Boot",
   "Kotlin",
   "Android",
+  "Figma",
 ];
 
 const Skills = () => {
