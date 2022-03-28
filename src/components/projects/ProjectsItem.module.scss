@@ -1,0 +1,66 @@
+@import "../../styles/variables";
+@import "../../styles/media";
+
+.card {
+  width: 85%;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 10px auto;
+  border: 1px solid $cardBorder;
+  border-radius: 4px;
+  color: $cardText;
+  h3 {
+    margin: 0;
+    margin-top: 10px;
+  }
+  img {
+    width: 90%;
+    border-radius: 4px;
+    filter: grayscale(100%);
+  }
+  p {
+    padding: 10px;
+    font-weight: 300;
+    font-size: medium;
+  }
+  section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .technology {
+    border: 1px solid $cardBorder;
+    width: max-content;
+    padding: 5px;
+    border-radius: 4px;
+    margin: 2px;
+  }
+  .links svg {
+    margin: 10px 10px 0px 10px;
+    height: 24px;
+    width: 24px;
+  }
+}
+
+.link {
+  fill: $navbarItems;
+  &:hover {
+    fill: $navbarItemsHover;
+  }
+}
+
+.card:hover {
+  cursor: default;
+  color: $cardTextHover;
+  background-color: $cardBackgroundHover;
+  img {
+    filter: grayscale(0%);
+  }
+  .technology {
+    background-color: rgb(247, 247, 247);
+    color: black;
+  }
+}

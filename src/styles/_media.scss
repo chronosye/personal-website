@@ -10,6 +10,12 @@
   }
 }
 
+@mixin medium-mobile {
+  @media screen and (max-width: 750px) {
+    @content;
+  }
+}
+
 @mixin small-mobile {
   @media screen and (max-width: 500px) {
     @content;
@@ -45,5 +51,21 @@
     100% {
       opacity: 0;
     }
+  }
+}
+
+@mixin custom-scroll-bar() {
+  &::-webkit-scrollbar {
+    border-radius: 10px;
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgb(230, 230, 230);
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
   }
 }
