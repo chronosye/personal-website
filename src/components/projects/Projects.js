@@ -6,6 +6,7 @@ import roadToUni from "../../assets/projectImages/roadToUni.PNG";
 import covidInfo from "../../assets/projectImages/covidInfo.PNG";
 import vardaDienuApp from "../../assets/projectImages/vardaDienuApp.png";
 import personalWebsite from "../../assets/projectImages/personalWebsite.PNG";
+import reactClock from "../../assets/projectImages/reactClock.PNG";
 
 const items = [
   {
@@ -55,11 +56,21 @@ const items = [
     title: "Personal website",
     description:
       "Personal website. Built to show others who I am, and what I have done before. Shows information about me, my skills, and also my portfolio.",
-    technologies: ["React.js", "SASS", "React Router"],
+    technologies: ["React.js", "Sass", "React Router"],
     github: "https://github.com/chronosye/personal-website",
     playstore: null,
     web: "/",
   },
+  {
+    image: reactClock,
+    title: "React Clock",
+    description:
+      "Minimalistic looking digital clock, created using React.js and Sass.",
+    technologies: ["React.js", "Sass", "React Hooks"],
+    github: "https://github.com/chronosye/react-clock",
+    playstore: null,
+    web: null,
+  }
 ];
 
 const Projects = () => {
