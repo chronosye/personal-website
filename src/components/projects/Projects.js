@@ -69,7 +69,7 @@ const items = [
     technologies: ["React.js", "Sass", "React Hooks"],
     github: "https://github.com/chronosye/react-clock",
     playstore: null,
-    web: null,
+    web: "https://react-digital-clock.herokuapp.com/",
   }
 ];
 
