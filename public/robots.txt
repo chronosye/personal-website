@@ -1,3 +1,4 @@
+Sitemap: https://ujansons.id.lv/sitemap.xml
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
