@@ -11,10 +11,7 @@ const landingPage = () => {
       </div>
       <h1>I'm Uldis</h1>
       <p>
-        CS Student @ <a href="https://www.df.lu.lv/">University of Latvia</a>
-      </p>
-      <p>
-        Goalkeeper @ <a href="https://www.zrhk.lv/">Tenax Dobele</a>
+        Web Developer
       </p>
     </div>
   );

@@ -8,8 +8,7 @@ const About = () => {
     <div className={classes.text}>
       <h1>About me</h1>
       <p>
-        I am a programmer from Latvia. Right now I have my final semester at the
-        University of Latvia in computer sciences. I like to create UI's that
+        I am a programmer from Latvia. I have a Bachelor's degree in Computer Science. I like to create UI's that
         are easier to use and also looks great.
       </p>
       <p>
