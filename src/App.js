@@ -5,6 +5,7 @@ import Layout from "./components/layout/Layout";
 import NotFound from "./components/notFound/NotFound";
 import Projects from "./components/projects/Projects";
 import Skills from "./components/skills/Skills";
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <SpeedInsights/>
     </Layout>
   );
 }
