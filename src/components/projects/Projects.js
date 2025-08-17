@@ -18,7 +18,7 @@ const items = [
     github:
       "https://github.com/chronosye/Handball-team-registration-and-game-protocol-system",
     playstore: null,
-    web: "https://handball-system.herokuapp.com/",
+    web: null,
   },
   {
     image: roadToUni,
@@ -28,7 +28,7 @@ const items = [
     technologies: ["Java", "Spring Boot", "Bootstrap", "Figma"],
     github: "https://github.com/chronosye/TD",
     playstore: null,
-    web: "https://uj18005.herokuapp.com/",
+    web: null,
   },
   {
     image: covidInfo,
@@ -38,7 +38,7 @@ const items = [
     technologies: ["Java", "Spring Boot", "Bootstrap"],
     github: "https://github.com/chronosye/covidUzzina",
     playstore: null,
-    web: "https://celosana-covid-laika.herokuapp.com/",
+    web: null,
   },
   {
     image: vardaDienuApp,
@@ -59,7 +59,7 @@ const items = [
     technologies: ["React.js", "Sass", "React Router"],
     github: "https://github.com/chronosye/personal-website",
     playstore: null,
-    web: "/",
+    web: null,
   },
   {
     image: reactClock,
@@ -69,7 +69,7 @@ const items = [
     technologies: ["React.js", "Sass", "React Hooks"],
     github: "https://github.com/chronosye/react-clock",
     playstore: null,
-    web: "https://react-digital-clock.herokuapp.com/",
+    web: null,
   }
 ];
 
